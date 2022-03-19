@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>container</h1>
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-8">
+          <div class="box text-light">col-8</div>
+        </div>
+        <div class="col-2">
+          <div class="box text-light">col-2</div>
+        </div>
+        <div class="col-2">
+          <div class="box text-light">col-2</div>
+        </div>
+        <div class="col-2">
+          <div class="box text-light">col-2</div>
+        </div>
+      </div>
+
+      <!-- 
+        画面の幅が
+        ・md(768px)までは何も効かないので1列に並ぶ。
+        ・md(768px)以上になると、md-6が効いて2行に並ぶ。
+        ・lg(992px)以上になると、lg-3が効いて1行に並ぶ。
+       -->
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box text-light">col-md-6 col-lg-3</div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box text-light">col-md-6 col-lg-3</div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box text-light">col-md-6 col-lg-3</div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box text-light">col-md-6 col-lg-3</div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+        https://getbootstrap.com/docs/5.1/layout/containers/
+        xxlは画面の幅が1400pxを超えるまではwidth:100%になる。
+        画面の幅が1400pxを超えるとwidth:1320pxになる。
+        画面の幅を目一杯使いたい場合は、xxlを採用するのもあり。
+     -->
+    <h1>container-xxl</h1>
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-8">
+          <div class="box text-light">col-8</div>
+        </div>
+        <div class="col-2">
+          <div class="box text-light">col-2</div>
+        </div>
+        <div class="col-2">
+          <div class="box text-light">col-2</div>
+        </div>
+        <div class="col-2">
+          <div class="box text-light">col-2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 
+        bundleの方には、popperも入っている。
+     -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

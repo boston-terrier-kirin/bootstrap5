@@ -12,31 +12,48 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="container p-5">
-      <table class="table table-sm table-bordered table-hover">
-        <thead class="table-primary text-center">
-          <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Email</th>
-            <th>Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td class="table-success">john@test.com</td>
-            <td class="text-end">23</td>
-          </tr>
-          <tr>
-            <td>Jane</td>
-            <td>Doe</td>
-            <td>jane@test.com</td>
-            <td class="text-end">40</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="border border-info mt-3 p-3 rounded my_form">
+            <h4>Sign-up to get started</h4>
+            <p class="text-muted">Receive weekly updates</p>
+            <form>
+              <div class="row">
+                <div class="col-lg-6 mb-3">
+                  <input
+                    class="form-control form-control-sm"
+                    type="text"
+                    name="f_name"
+                    placeholder="First Name"
+                  />
+                </div>
+                <div class="col-lg-6 mb-3">
+                  <input
+                    class="form-control form-control-sm"
+                    type="text"
+                    name="l_name"
+                    placeholder="Last Name"
+                  />
+                </div>
+                <div class="col mb-3">
+                  <input
+                    class="form-control form-control-sm"
+                    type="email"
+                    name="email"
+                    placeholder="Email"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col d-grid">
+                  <button class="btn btn-primary">Signup</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- 
+      navbar-expand-md：mdまで広がったら、expandする。mdまでは閉じているという意味になる。
+     -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hi, Kirin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jobs</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
+              <input
+                class="form-control form-control-sm"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-sm btn-primary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/solid.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/regular.min.js"></script>
+  </body>
+</html>

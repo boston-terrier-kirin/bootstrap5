@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Jobs</title>
+  </head>
+  <body>
+    <!-- 
+      navbar-expand-md：mdまで広がったら、expandする。mdまでは閉じているという意味になる。
+     -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Hi, Kirin</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="employees-list.html">Employees</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="jobs-list.html">Jobs</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
+              <input
+                class="form-control form-control-sm"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-sm btn-primary" type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row mt-5">
+        <div class="col-lg-3 col-md-3">
+          <div class="list-group">
+            <div class="list-group-item active">Jobs Data</div>
+            <a
+              href="#"
+              class="list-group-item"
+              data-bs-toggle="modal"
+              data-bs-target="#add_job"
+              >Add Job</a
+            >
+            <a href="#" class="list-group-item">View all Job</a>
+          </div>
+        </div>
+        <div class="col-lg-9 col-md-9">
+          <table class="table table-hover bg-light">
+            <tr class="table-dark">
+              <th>ID</th>
+              <th>Name</th>
+              <th>Details</th>
+              <th>Edit</th>
+              <th>Delete</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Web Designer</td>
+              <td>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#job_details"
+                  class="btn btn-sm btn-info"
+                  >Details</a
+                >
+              </td>
+              <td>
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#job_edit_detail"
+                  href="#"
+                  class="btn btn-sm btn-warning"
+                  >Edit</a
+                >
+              </td>
+              <td><a href="#" class="btn btn-sm btn-danger">Delete</a></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Web Developer</td>
+              <td>
+                <a
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#job_details"
+                  class="btn btn-sm btn-info"
+                  >Details</a
+                >
+              </td>
+              <td>
+                <a
+                  data-bs-toggle="modal"
+                  data-bs-target="#job_edit_detail"
+                  href="#"
+                  class="btn btn-sm btn-warning"
+                  >Edit</a
+                >
+              </td>
+              <td><a href="#" class="btn btn-sm btn-danger">Delete</a></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Job Add Modal -->
+    <div
+      class="modal fade"
+      id="add_job"
+      tabindex="-1"
+      aria-labelledby="add_job"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add Job</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  placeholder="Job Name"
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-control form-control-sm">
+                  <option value="Graphic Designer">Graphic Designer</option>
+                  <option value="Web Designer">Web Designer</option>
+                  <option value="Web Developer">Web Developer</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-sm btn-success">Add New Job</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eemployee Detail Modal -->
+    <div
+      class="modal fade"
+      id="job_details"
+      tabindex="-1"
+      aria-labelledby="job_details"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Job Details</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <table class="table table-border">
+            <tr>
+              <th>ID</th>
+              <td>1</td>
+            </tr>
+            <tr>
+              <th>Name</th>
+              <td>Web Developer</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Eemployee Edit Detail Modal -->
+    <div
+      class="modal fade"
+      id="job_edit_detail"
+      tabindex="-1"
+      aria-labelledby="job_edit_detail"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Edit Job Detail</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control form-control-sm"
+                  placeholder="Job Name"
+                  value="Web Developer"
+                />
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-sm btn-success">Edit Job Detail</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/fontawesome.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/solid.min.js"></script>
+    <script src="./node_modules/@fortawesome/fontawesome-free/js/regular.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- fluidは100% -->
+    <div class="container-fluid bg-primary text-light mb-3">Hello</div>
+
+    <!-- smより小さくなると、colが効かなくなって、上下にならぶ。col-smは、≥576px で有効になるので、576px以下はcolが効かない。 -->
+    <div class="container bg-secondary text-light mb-3">
+      <div class="row">
+        <!-- デフォルト(xs)でmb-2をつけて、sm以上になるとmb-0にする -->
+        <div class="col-sm bg-primary mb-2 mb-sm-0">First Column</div>
+        <div class="col-sm-6 bg-success mb-2 mb-sm-0">Second Column</div>
+        <div class="col-sm bg-danger mb-sm-0">Third Column</div>
+      </div>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

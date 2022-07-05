@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="title icon" type="image/png" href="images/title-img.png" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Pure Bootstrap Web Site</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand ps-3">
+          <i class="bi bi-building text-white"></i>
+        </a>
+        <!-- #navがid="nav"と連動している -->
+        <button
+          type="button"
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- navbar-expand-lgとnavbar-collapseが連動している。 -->
+        <div class="collapse navbar-collapse justify-content-between" id="nav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-uppercase font-weight-bold px-lg-3"
+                href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-uppercase font-weight-bold px-lg-3"
+                href="#"
+                >Skills</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light text-uppercase font-weight-bold px-lg-3"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Projects</a
+              >
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Project 1</a>
+                <a class="dropdown-item" href="#">Project 2</a>
+                <a class="dropdown-item" href="#">Project 3</a>
+                <a class="dropdown-item" href="#">Project 4</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-uppercase font-weight-bold px-lg-3"
+                href="#"
+                >Team</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-light text-uppercase font-weight-bold px-lg-3"
+                href="#"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <form class="d-flex">
+            <div class="input-group">
+              <input class="form-control" type="text" placeholder="Search" />
+              <button class="input-group-text" type="button">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

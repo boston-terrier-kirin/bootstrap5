@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container mb-3">
+      <h1>
+        Current break point is:
+        <span class="d-inline d-sm-none">XS</span>
+        <span class="d-none d-sm-inline d-md-none">SM</span>
+        <span class="d-none d-md-inline d-lg-none">MD</span>
+        <span class="d-none d-lg-inline d-xxl-none">LG</span>
+        <span class="d-none d-xxl-inline">XXL</span>
+      </h1>
+    </div>
+
+    <hr />
+
+    <div class="container mb-3">
+      <h1 class="bg-dark text-white">This is an h1 block</h1>
+      <h1 class="bg-dark text-white d-inline">This is an h1 inline</h1>
+      <h1 class="bg-primary text-white d-inline">This is an h1 inline</h1>
+    </div>
+
+    <hr />
+
+    <div class="container mb-3">
+      <!-- lgに達したらnone -->
+      <h1 class="bg-success text-white d-lg-none">This is HIDDEN at lg</h1>
+    </div>
+    <div class="container mb-3">
+      <!-- 逆にlgに達したらblock -->
+      <h1 class="bg-danger text-white d-none d-lg-block">
+        This is SHOWN at lg
+      </h1>
+    </div>
+
+    <hr />
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

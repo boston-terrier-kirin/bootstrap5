@@ -1,0 +1,35 @@
+/* 576px まではred */
+body {
+  background: red;
+}
+
+/* 576px 以上はorange */
+@media (min-width: 576px) {
+  body {
+    background: orange;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    background: yellow;
+  }
+}
+
+@media (min-width: 992px) {
+  body {
+    background: green;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    background: royalblue;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    background: blue;
+  }
+}

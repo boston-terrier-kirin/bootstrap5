@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="title icon" type="image/png" href="images/title-img.png" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Nav</title>
+  </head>
+  <body>
+    <div class="container mb-5">
+      <h1 class="display-3 text-center">Navs tabs</h1>
+      <ul class="nav nav-tabs nav-fill justify-content-center">
+        <ul class="nav-item">
+          <a href="#" class="nav-link active">First</a>
+        </ul>
+        <ul class="nav-item">
+          <a href="#" class="nav-link">Second</a>
+        </ul>
+        <ul class="nav-item">
+          <a href="#" class="nav-link">Third</a>
+        </ul>
+      </ul>
+    </div>
+
+    <div class="container">
+      <h1 class="display-3 text-center">Navs pills</h1>
+      <!-- デフォルトはflex-columnで縦並び、mdになったらflex-rowで横並び -->
+      <ul class="nav nav-pills nav-fill flex-column flex-md-row">
+        <ul class="nav-item">
+          <a href="#" class="nav-link active">First</a>
+        </ul>
+        <ul class="nav-item">
+          <a href="#" class="nav-link">Second</a>
+        </ul>
+        <ul class="nav-item">
+          <a href="#" class="nav-link">Third</a>
+        </ul>
+      </ul>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
